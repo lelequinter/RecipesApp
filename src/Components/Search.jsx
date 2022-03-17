@@ -9,7 +9,8 @@ function Search() {
   //   console.log(input);
   const submitHandler = (e) => {
     e.preventDefault();
-    navigate('/searched/' + input);
+    navigate("/searched/" + input);
+    setInput("");
   };
   return (
     <FormStyle onSubmit={submitHandler}>
